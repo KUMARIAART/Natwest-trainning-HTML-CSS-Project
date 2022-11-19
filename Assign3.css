@@ -1,0 +1,200 @@
+#maindiv{
+   width: 85vw;
+   height: 120vh;
+   border: 2px solid black;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   margin: auto;
+}
+#flage{
+    width: 24vw;
+    height: 20vh;
+    border: 2px solid black;
+    padding: 1vh;
+    margin-top:2vw;
+    margin-left: 2vh;
+}
+#img1{
+    width: 7vw;
+    height:15vh;
+    margin-top:1.5vw;
+    margin-left:8vw;
+}
+#germany1{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:black;
+}
+#germany2{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:red;
+}
+#germany3{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:yellow;
+}
+#italy{
+    display: flex;
+    flex-direction: row;
+}
+#italy1{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:green;
+}
+#italy2{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:white;
+}
+#italy3{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:red;
+}
+#turky{
+    width: 24vw;
+    height: 20vh;
+    background-color:rgb(214, 46, 46);
+}
+#img2{
+    width: 7vw;
+    height:15vh;
+    margin-top:1.5vw;
+    margin-left:8vw;
+}
+#france{
+    display: flex;
+    flex-direction: row;
+}
+#france1{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:blue;
+}
+#france2{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:white;
+}
+#france3{
+    padding: 0px;
+    width:8vw;
+    height:19vh;
+    background-color:red;
+}
+#russia1{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:white;
+}
+#russia2{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:blue;
+}
+#russia3{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:red;
+}
+#india1{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:orange;
+}
+#india2{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:white;
+}
+#india3{
+    padding: 0px;
+    width:24vw;
+    height:6.6vh;
+    background-color:green;
+}
+#img3{
+    width: 3vw;
+    height:6.5vh;
+    margin-left:10vw;  
+    margin-bottom:15vw;
+}
+#canada{
+    display: flex;
+    flex-direction: row;
+}
+#canada1{
+    padding: 0px;
+    width:7vw;
+    height:19vh;
+    background-color:red;
+    margin-left:0.5vw;
+}
+#canada2{
+    padding: 0px;
+    width:9vw;
+    height:19vh;
+    background-color:white;
+}
+#canada3{
+    padding: 0px;
+    width:7vw;
+    height:19vh;
+    background-color:red;
+}
+#img4{
+    width: 8vw;
+    height:14vh;
+    margin-left:-0vw;
+}
+#maxico{
+    display: flex;
+    flex-direction: row;
+}
+#maxico1{
+    padding: 0px;
+    width:7vw;
+    height:19vh;
+    background-color:red;
+    margin-left:0.5vw;
+}
+#maxico2{
+    padding: 0px;
+    width:9vw;
+    height:19vh;
+    background-color:white;
+}
+#maxico3{
+    padding: 0px;
+    width:7vw;
+    height:19vh;
+    background-color:green;
+}
+#img5{
+    width: 8vw;
+    height:14vh;
+    margin-left:-0vw;
+    margin-top:1.5vw;
+}
+#img6{
+    width: 9vw;
+    height:15vh;
+    margin-top:1.5vw;
+    margin-left:8vw;
+}

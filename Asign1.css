@@ -1,0 +1,95 @@
+#maindiv{
+    width: 500px;
+    height: 715px;
+    border: 2px solid black;
+    margin: auto;
+}
+#heading{
+    width: 490px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+#sn{
+    margin-top: 5px;
+    margin-left:3px;
+    display: flex;
+    flex-direction: row;
+}
+#input5{
+    width: 250px;
+    height: 45px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+}
+#input1{
+    width: 400px;
+    height: 45px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+}
+#input2{
+    width: 400px;
+    height: 45px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+    margin-right:3px;
+}
+#input3{
+    width: 240px;
+    height: 45px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+    margin-right:3px;
+}
+#input4{
+    width: 240px;
+    height: 45px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left:3px;
+    margin-right:3px;
+}
+h2{
+    text-align: center;
+    margin-top: 15px;
+}
+input{
+    width: 220px;
+    height:30px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    text-align: center;
+    /* width: 10px;
+    height: 10px; */
+}
+#add{
+    width: 200px;
+    height:35px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+button{
+    width: 500px;
+    height:40px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right:5px;
+}

@@ -1,0 +1,32 @@
+table, th, td {
+    width: 500px;
+    padding: 10px;  
+    text-align: center;
+}
+table{
+    height: 600px;
+}
+p{
+    margin-top: -15px;
+}
+textarea{
+    height: 20px;
+}
+select{
+    height: 30px;
+    width: 250px;
+}
+input{
+    height: 20px;
+    width: 250px;
+}
+#radio{
+    height: 10px;
+    width: 10px;
+}
+#maindiv{
+    width: 500px;
+    height: 600px;
+    border: 2px solid black;
+    margin-left: 200px;
+}
