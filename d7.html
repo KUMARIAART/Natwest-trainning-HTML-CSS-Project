@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MergeShort</title>
+    <style>
+        #maindiv {
+            width: 40vw;
+            height: 50vh;
+            margin: auto;
+            border: 0.005vw solid black;
+            background-color:goldenrod;
+            display: flex;
+            flex-direction: column;
+            margin-top:15vh;
+        }
+
+        input {
+            width: 15vw;
+            height: 6vh;
+            align-self: center;
+            background-color:whitesmoke;
+            margin-top: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maindiv">
+        <input class="str" type="text" placeholder="Enter Numbers">
+        <input type="button" value="click me" onclick="ShowArr()" />
+        <div id="show"></div>
+    </div>
+    <script>
+        function ShowArr() {
+            var arr = document.querySelector(".str").value
+            arr = arr.split(",")
+            const showdata = document.querySelector("#show")
+            function mergeSort(arr) {
+                if (arr.length > 1) {
+                    var mid = Math.floor(arr.length / 2)
+                    var left = arr.slice(0, mid)
+                    var right = arr.slice(mid, arr.length)
+                    mergeSort(left)
+                    mergeSort(right)
+                    var left_index = 0
+                    var right_index = 0
+                    var position = 0
+                    while (left_index < left.length && right_index < right.length) {
+                        if (left[left_index] < right[right_index]) {
+                            arr[position] = left[left_index]
+                            left_index += 1
+                        }
+                        else {
+                            arr[position] = right[right_index]
+                            right_index += 1
+                        }
+                        position += 1
+                    }
+                    while (left_index < left.length) {
+                        arr[position] = left[left_index]
+                        position += 1
+                        left_index += 1
+                    }
+                    while (right_index < right.length) {
+                        arr[position] = right[right_index]
+                        position += 1
+                        right_index += 1
+                    }
+                }
+            }
+            mergeSort(arr)
+            showdata.innerHTML += arr
+        }
+    </script>
+</body>
+
+</html>

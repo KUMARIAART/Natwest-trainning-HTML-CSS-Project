@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+        const div = document.querySelector("#main")
+        const multiTable = () => {
+            for (let i = 1; i <= 20; i++) {
+                var table = ""
+                for (let j = 1; j <= 10; j++) {
+                    table += `<p>${i}x${j}=${i * j}</p>`
+                }
+                div.innerHTML += `<div id="table">${table}</div>`
+            }
+        }
+        div.style.display = "grid"
+        div.style.gridTemplateColumns = "repeat(10,1fr)"
+
+        multiTable()
+    </script>
+</body>
+
+</html>

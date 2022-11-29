@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        #maindiv{
+            width:50vw;
+            height:60vh;
+            margin: auto;
+            border:0.005vw solid black;
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction:column;
+            border-radius:4%;
+        }
+        #input{
+            height:9vh;
+            width:25vw;
+            margin: auto;
+            background-color: lightgray;
+            margin-top:18vh;
+        }
+        #button{
+            height:9vh;
+            width:20vw;
+            margin: auto;
+            background-color:lightgray;
+            margin-top:-15vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <input id="input"type="text" placeholder="Enter Any Number">
+        <button id="button">Submit</button>
+        <div id="display">
+
+        </div>
+    </div>
+
+    <script>
+        const input1=document.querySelector("#input");
+        const button1=document.querySelector("#button");
+        const display1=document.querySelector("#display")
+        function showtable(){
+            for(var i=1;i<=10;i++){
+                display1.innerHTML+=`${input1.value} * ${i} =${i*input1.value} <br>`
+            }
+        }
+        button1.addEventListener("click",showtable)
+    </script>
+</body>
+</html>

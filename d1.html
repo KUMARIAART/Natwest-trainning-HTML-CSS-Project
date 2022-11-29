@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camel</title>
+    <style>
+        #maindiv{
+            width:50vw;
+            height:60vh;
+            margin: auto;
+            border:0.005vw solid black;
+            background-color: lightcoral;
+            display: flex;
+            flex-direction:column;
+            border-radius:4%;
+        }
+        input{
+            width:20vw;
+            height:11vh;
+            align-self: center;
+            background-color: lightblue;
+            margin-top:5vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+    <input class="str" type="text" placeholder="Enter the string">
+    <input type="button" value="click me" onclick="convert()" />
+    </div>
+<script>
+    var string1 = document.querySelector(".str")
+    function convert() {
+        string1 = string1.value
+        string1=string1.toLowerCase()
+        var str = "";
+        for (let i=0;i<string1.length-1;i++) {
+            if (string1[i] == ' ') {
+                str+= string1[i + 1].toUpperCase();
+                i++
+            }
+            else {
+                str += string1[i];
+            }
+            console.log(str)
+        }
+        alert(str)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multipaleTable</title>
+    <style>
+        #maindiv {
+            width: 95vw;
+            height: 95vh;
+            border: 0.005vw solid black;
+            margin: auto;
+        }
+        table{
+            width:4vw;
+            height:95vh;
+            font-size:1vw;
+            
+        }
+        td{
+            border: 2px solid black;
+            background-color:lightsalmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="maindiv"></div>
+    <script>
+        const maindiv1 = document.querySelector("#maindiv")
+        const multiTable = () => {
+            var table = "<table>"
+            for (let i = 1; i <= 10; i++) {
+                table += "<tr>"
+                for (let j = 1; j <= 20; j++) {
+                    table += `<td>${j}*${i}=${j * i}</td>`
+                }
+                table += "</tr>"
+            }
+            table += "</table>"
+            maindiv1.innerHTML = table
+        }
+        multiTable()
+    </script>
+</body>
+
+</html>
